@@ -6,9 +6,6 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "start-web": "./node_modules/.bin/webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "build-web": "./node_modules/.bin/webpack -p --config ./web/webpack.config.js",
-    "upload-sourcemaps": "npm run upload-sourcemaps-ios; npm run upload-sourcemaps-android",
-    "upload-sourcemaps-ios": "(GIT_COMMIT=`git rev-parse HEAD`; curl https://api.rollbar.com/api/1/sourcemap -F access_token=0dbf70f633c645929104a439cb9e6c4f -F version=$GIT_COMMIT.ios -F minified_url=http://reactnativehost/main.jsbundle -F source_map=@sourcemap.ios.js.map -F index.js=@index.js) || true",
-    "upload-sourcemaps-android": "(GIT_COMMIT=`git rev-parse HEAD`; curl https://api.rollbar.com/api/1/sourcemap -F access_token=0dbf70f633c645929104a439cb9e6c4f -F version=$GIT_COMMIT.android -F minified_url=http://reactnativehost/index.android.bundle -F source_map=@sourcemap.android.js.map -F index.js=@index.js) || true",
     "test": "detox build && detox test --cleanup",
     "test-jest": "jest"
   },
