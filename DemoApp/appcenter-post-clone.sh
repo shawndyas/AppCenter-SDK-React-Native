@@ -4,6 +4,7 @@ echo $NPM_RC | base64 --decode > $APPCENTER_SOURCE_DIRECTORY/DemoApp/.npmrc
 # Delete everything except DemoApp folder
 rm -rf ../appcenter* ../AppCenterReactNativeShared ../TestApp34 ../BrownfieldTestApp ../TestApp
 
+brew uninstall node@6
 NODE_VERSION="10.15.1"
 npm config delete prefix
 . ~/.bashrc
