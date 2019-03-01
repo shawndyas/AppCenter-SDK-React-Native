@@ -14,7 +14,7 @@
     "appcenter-push": "^1.12.0",
     "metro": "0.48.1",
     "react": "16.6.3",
-    "react-native": "github:Outpatient/react-native#0.56.0_uiviewmanager_patch",
+    "react-native": "0.56.0",
     "react-native-fs": "^2.9.12",
     "react-native-image-picker": "^0.28.0",
     "react-native-modal-selector": "^1.0.2",
