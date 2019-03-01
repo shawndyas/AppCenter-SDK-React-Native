@@ -7,7 +7,7 @@ rm -rf ../appcenter* ../AppCenterReactNativeShared ../TestApp34 ../BrownfieldTes
 #brew uninstall node@6
 NODE_VERSION="10.15.1"
 #npm config delete prefix
-#. ~/.bashrc
+. ~/.bashrc
 nvm install "$NODE_VERSION"
 nvm unalias default
 nvm alias node8 "$NODE_VERSION"
